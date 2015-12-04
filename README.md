@@ -1,3 +1,13 @@
+
+installation
+-----
+	
+	sudo yum install -y tmux \
+	bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/dottmux/master/.tmux.conf)
+
+
+usage
+-----
         ^a ,   --rename window
         ^a n   --next window
         ^a p   --previous window
