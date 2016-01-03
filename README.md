@@ -8,13 +8,16 @@ installation
 
 usage
 -----
-        ^a ,   --rename window
-        ^a n   --next window
-        ^a p   --previous window
-        ^a d   --exit current window
-        ^a "   --split horizontally -->  changed to  |
-        ^a %   --split pane vertically --> changed to -
-        ^a t   --show time
+        ^a ,      --rename window
+        ^a n      --next window
+        ^a p      --previous window
+        ^a d      --exit current window
+        ^a "      --split h -->  changed to |
+        ^a %      --split v -->  changed to -
+        ^a t      --show time
+        ^a hjkl   --vim movements
+        ^a HJKL   --resize window size 
+	mouse key --resize window size
 
         tmux attach 
 
