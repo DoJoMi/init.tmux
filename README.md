@@ -16,8 +16,8 @@ usage
         ^a %      --split v -->  changed to -
         ^a t      --show time
         ^a hjkl   --vim movements
-        ^a HJKL   --resize window size 
-	mouse key --resize window size
+        ^a HJKL   --resize window size
+        mouse key --resize window size
 
         tmux attach 
 
