@@ -8,6 +8,7 @@ installation
 
 usage
 -----
+	
 	^a ?      --show keys
         ^a ,      --rename window
         ^a n      --next window
