@@ -13,7 +13,7 @@ basic usage (reconfigured from ctrl+b to ctrl+a)
         ^a p        --previous window   --> not longer available
         ^a d        --exit current window
         ^a "        --split h           --> changed to |
-        ^a %        --split v           --> changed to -
+        ^a %        --split v           --> changed to _
         ^a t        --show time         --> fullscreen time in cyan
         ^a &        --del session
         
