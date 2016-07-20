@@ -39,6 +39,14 @@ reconfigure file inside tmux session
 ------
         tmux ^a :source-file ~/.tmux.conf
 
+plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
+------
+        git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+        echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
+        ~/.tmux/plugins/tpm/tpm
+        ^a I       --fetch plugins
+        ^a alt+u   --uninstall plugins
+
 colour
 ------
         for i in {0..255} ; do
