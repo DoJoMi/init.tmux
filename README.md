@@ -4,6 +4,12 @@ installation
 	sudo yum install -y tmux \
 	bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/dottmux/master/.tmux.conf)
 
+reload file
+-----
+
+	:source-file ~/tmux.conf       --> with vim
+	tmux source-file ~/tmux.conf   --> with tmux
+
 basic usage (reconfigured from ctrl+b to ctrl+a)
 -----
         ^a ?        --show keys
@@ -44,10 +50,11 @@ plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
         git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
         echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
         ~/.tmux/plugins/tpm/tpm
+        
         ^a I       --fetch plugins
         ^a alt+u   --uninstall plugins
 
-colour
+color
 ------
         for i in {0..255} ; do
          printf "\x1b[38;5;${i}mcolour${i}\n"
