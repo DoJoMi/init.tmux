@@ -1,5 +1,5 @@
 
-installation
+installation version 2.1
 -----
 	sudo yum install -y tmux \
 	bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/dottmux/master/.tmux.conf)
