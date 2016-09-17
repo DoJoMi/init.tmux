@@ -6,9 +6,9 @@ installation version 2.1
 
 reload file
 -----
-
-	:source-file ~/tmux.conf       --> with vim
-	tmux source-file ~/tmux.conf   --> with tmux
+        :source-file ~/tmux.conf       --> with vim
+        tmux source-file ~/tmux.conf   --> with tmux
+        ^a r       --reload with tmux
 
 basic usage (reconfigured from ctrl+b to ctrl+a)
 -----
