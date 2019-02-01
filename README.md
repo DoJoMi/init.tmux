@@ -53,14 +53,3 @@ plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
         
         ^a I       --fetch plugins
         ^a alt+u   --uninstall plugins
-
-color
-------
-        for i in {0..255} ; do
-         printf "\x1b[38;5;${i}mcolour${i}\n"
-        done
-
-how it looks like
-------
-![image](https://raw.githubusercontent.com/DoJoMi/dottmux/master/tmux.png)
-
