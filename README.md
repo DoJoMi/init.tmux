@@ -1,6 +1,4 @@
 ```shell
-# installation version 2.1
-sudo yum install -y tmux \
 bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/init.tmux/master/.tmux.conf)
 
 # reload file
