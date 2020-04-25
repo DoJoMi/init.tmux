@@ -50,3 +50,8 @@ echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
 ^a I       --fetch plugins
 ^a alt+u   --uninstall plugins
 ```
+
+# tmux-themes
+```shell
+https://github.com/jimeh/tmux-themepack
+```
