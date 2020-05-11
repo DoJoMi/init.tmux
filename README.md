@@ -39,9 +39,12 @@ tmux a -t <name> --attach specific session
 ```
 #### reconfigure file inside tmux session
 ```shell
+
 tmux ^a :source-file ~/.tmux.conf
+```
 
 #### plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
+https://github.com/tmux-plugins
 ```shell
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
@@ -54,4 +57,5 @@ echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
 #### tmux-themes
 ```shell
 https://github.com/jimeh/tmux-themepack
+
 ```
