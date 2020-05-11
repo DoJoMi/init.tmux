@@ -37,18 +37,18 @@ shift+mouse --copy/paste into tmux
 tmux ls          --show sessions
 tmux a -t <name> --attach specific session
 ```
-#### reconfigure file inside tmux session
-```shell
-
-tmux ^a :source-file ~/.tmux.conf
-```
 
 #### plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
-https://github.com/tmux-plugins
+
 ```shell
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
-~/.tmux/plugins/tpm/tpm
+# https://github.com/tmux-plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'jimeh/tmux-themepack'
+set -g @themepack 'powerline/default/green'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run -b '~/.tmux/plugins/tpm/tpm'
 
 ^a I       --fetch plugins
 ^a alt+u   --uninstall plugins
@@ -57,5 +57,4 @@ echo -e "set -g @plugin 'nhdaly/tmux-scroll-copy-mode'"
 #### tmux-themes
 ```shell
 https://github.com/jimeh/tmux-themepack
-
 ```
