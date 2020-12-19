@@ -53,8 +53,3 @@ run -b '~/.tmux/plugins/tpm/tpm'
 ^a I       --fetch plugins
 ^a alt+u   --uninstall plugins
 ```
-
-#### tmux-themes
-```shell
-https://github.com/jimeh/tmux-themepack
-```
