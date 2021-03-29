@@ -1,13 +1,14 @@
+### Installation
 ```shell
 bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/init.tmux/master/.tmux.conf)
 ```
-#### reload file
+### Reload file
 ```shell
 :source-file ~/tmux.conf       --> with vim
 tmux source-file ~/tmux.conf   --> with tmux
 ^a r       --reload with tmux
 ```
-#### basic usage (reconfigured from ctrl+b to ctrl+a)
+### Basic usage (reconfigured from ctrl+b to ctrl+a)
 ```shell
 ^a ?        --show keys
 ^a c        --create new window --> changed to automatic rename window
@@ -20,7 +21,7 @@ tmux source-file ~/tmux.conf   --> with tmux
 ^a t        --show time         --> fullscreen time in cyan
 ^a &        --del session
  ```       
-#### advanced options
+### Advanced options
 ```shell
 ^a hjkl     --vim movements
 ^a HJKL     --resize window size
@@ -38,8 +39,7 @@ tmux ls          --show sessions
 tmux a -t <name> --attach specific session
 ```
 
-#### plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
-
+### Plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
 ```shell
 # https://github.com/tmux-plugins
 set -g @plugin 'tmux-plugins/tpm'
