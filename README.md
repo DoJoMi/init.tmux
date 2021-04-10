@@ -1,5 +1,9 @@
 ### Installation
 ```shell
+➜ tmux -V
+tmux 3.1c
+
+```shell
 bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/init.tmux/master/.tmux.conf)
 ```
 ### Reload file
