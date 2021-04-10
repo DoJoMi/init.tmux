@@ -14,27 +14,33 @@ tmux source-file ~/tmux.conf   --> with tmux
 ```
 ### Basic usage (reconfigured from ctrl+b to ctrl+a)
 ```shell
-^a ?        --show keys
-^a c        --create new window --> changed to automatic rename window
-^a ,        --rename window
-^a n        --next window
-^a p        --previous window   --> not longer available
-^a d        --exit current window
-^a "        --split h           --> changed to |
-^a %        --split v           --> changed to _
-^a t        --show time         --> fullscreen time in cyan
-^a &        --del session
+
+# change prefix key inside the .tmux.conf for your needs
+#unbind C-b
+#set -g prefix C-a
+
+
+^b ?        --show keys
+^b c        --create new window --> changed to automatic rename window
+^b ,        --rename window
+^b n        --next window
+^b p        --previous window   --> not longer available
+^b d        --exit current window
+^b "        --split h           --> changed to |
+^b %        --split v           --> changed to _
+^b t        --show time         --> fullscreen time in cyan
+^b &        --del session
  ```       
 ### Advanced options
 ```shell
-^a hjkl     --vim movements
-^a HJKL     --resize window size
+^b hjkl     --vim movements
+^b HJKL     --resize window size
 
-^a esc      --enter/exit copy mode
-^a esc v    --start visual mode (V visual line)
-^a esc v y  --yank into buffer
-^a p        --previous window --> changed to paste buffer
-^a -        --delete buffer 
+^b esc      --enter/exit copy mode
+^b esc v    --start visual mode (V visual line)
+^b esc v y  --yank into buffer
+^b p        --previous window --> changed to paste buffer
+^b -        --delete buffer 
     
 mouse key   --resize window size with mouse
 shift+mouse --copy/paste into tmux 
@@ -54,6 +60,6 @@ set -g @themepack 'powerline/default/green'
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run -b '~/.tmux/plugins/tpm/tpm'
 
-^a I       --fetch plugins
-^a alt+u   --uninstall plugins
+^b I       --fetch plugins
+^b alt+u   --uninstall plugins
 ```
