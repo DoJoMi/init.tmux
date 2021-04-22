@@ -52,6 +52,7 @@ tmux a -t <name> --attach specific session
 ### Plugins handled with [tpm](https://github.com/tmux-plugins/tpm)
 ```shell
 # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'jimeh/tmux-themepack'
