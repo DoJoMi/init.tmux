@@ -4,6 +4,7 @@
 tmux 3.1c
 ```
 ```shell
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && \
 bash <(curl -o .tmux.conf https://raw.githubusercontent.com/DoJoMi/init.tmux/master/.tmux.conf)
 ```
 ### Reload file
