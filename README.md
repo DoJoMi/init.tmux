@@ -32,7 +32,12 @@ tmux source-file ~/tmux.conf   --> with tmux
 tmux new -s <name>       --create a new tmux session
 ^b d                     --detach from current session
 tmux ls                  --reatach to the detached session
-tmux attach -d -t <name> 
+tmux attach -d -t <name>
+
+tmux -S /tmp/shared     --share session with user
+chmod 777 /tmp/shared
+# setfacl -m otheruser:rwx /tmp/shared
+tmux -S /tmp/shared attach
 
 ^b "        --split h           --> changed to |
 ^b %        --split v           --> changed to _
