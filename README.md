@@ -28,7 +28,12 @@ tmux source-file ~/tmux.conf   --> with tmux
 ^b ,        --rename window
 ^b n        --next window
 ^b p        --previous window   --> not longer available
-^b d        --exit current window
+
+tmux new -s <name>       --create a new tmux session
+^b d                     --detach from current session
+tmux ls                  --reatach to the detached session
+tmux attach -d -t <name> 
+
 ^b "        --split h           --> changed to |
 ^b %        --split v           --> changed to _
 ^b t        --show time         --> fullscreen time in cyan
